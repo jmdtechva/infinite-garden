@@ -1216,7 +1216,7 @@ function typeIntroLines() {
     const text = INTRO_LINES[lineIndex];
     el.innerHTML = '';
     let charIndex = 0;
-    const speed = 45;
+    const speed = 90;
     const typer = setInterval(() => {
       el.innerHTML = text.slice(0, charIndex) + '<span class="cursor">|</span>';
       charIndex++;
@@ -1225,7 +1225,7 @@ function typeIntroLines() {
         setTimeout(() => {
           lineIndex++;
           typeLine();
-        }, 1400);
+        }, 3000);
       }
     }, speed);
   }
